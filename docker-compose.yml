@@ -1,0 +1,17 @@
+version: '3.5'
+services:
+  oktibor:
+    build: .
+    image: docker.oktibor.com/oktibor
+    restart: always
+    container_name: oktibor
+    environment:
+      VIRTUAL_HOST: oktibor.com,www.oktibor.com
+      NODE_ENV: production
+      UPTIMEROBOT_API_KEY: "${UPTIMEROBOT_API_KEY}"
+    networks:
+      - nginx
+
+networks:
+  nginx:
+    external: true

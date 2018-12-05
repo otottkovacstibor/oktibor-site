@@ -1,0 +1,22 @@
+{
+  "name": "Tibor Otott-Kovacs",
+  "short_name": "oktibor",
+  "description": "Tibor Otott-Kovacs's Site",
+  "icons": [
+    {
+      "src": "https://www.oktibor.com/images/profile.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "https://www.oktibor.com/images/profile400x400.png",
+      "sizes": "400x400",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#DAE3E7",
+  "theme_color": "#778492",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/"
+}

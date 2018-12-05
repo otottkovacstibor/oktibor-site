@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tibor Otott-Kovacs - {{ title }}</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="description" content="Tibor Otott-Kovacs">
+  <meta name="google-site-verification" content="uUrKswSQDhrpqDynrHcV6rO5YtmSSbXr-eMR73eIed8" />
+  
+  <meta name="theme-color" content="#778492">
+  <link rel="manifest" href="/manifest.json">
+  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+  <link rel='dns-prefetch' href='//avatars0.githubusercontent.com' />
+  <link rel='dns-prefetch' href='//avatars3.githubusercontent.com' />
+  <link rel='dns-prefetch' href='//assets-cdn.github.com' />
+  <link rel="stylesheet" href="/fontawesome/css/all.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/octicons.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/styles.css" type="text/css" id="theme-style" media="all">
+  
+</head>
+
+<body itemscope itemprop="author" itemtype="http://schema.org/Person">
+  <header class="header">
+    <div class="container clearfix">
+      <a href="/">
+        <img class="profile-image img-fluid float-left" itemprop="image" src="/images/profile.png" alt="Tibor Otott-Kovacs" />
+      </a>
+      <div class="profile-content float-left">
+        <h1 class="name" itemprop="name">Tibor Otott-Kovacs</h1>
+        <h2 class="desc" itemprop="jobtitle">Software Developer</h2>
+        <ul class="social list-inline">
+          <li class="list-inline-item">
+            <a href="https://twitter.com/Tibii02" target="_blank" title="Twitter" itemprop="sameAs">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/Tibi02" target="_blank" title="Facebook" itemprop="sameAs">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com/channel/UCXY2YX-HpBMBDDOL0he7IHA" target="_blank" title="YouTube" itemprop="sameAs">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://plus.google.com/+Tibor%C3%93tottKov%C3%A1cs" target="_blank" title="Google plus" itemprop="sameAs">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://github.com/Tibi02" target="_blank" title="GitHub" itemprop="sameAs">
+              <i class="fab fa-github-alt"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://bitbucket.org/tibi02" target="_blank" title="Bitbucket" itemprop="sameAs">
+              <i class="fab fa-bitbucket"></i>
+            </a>
+          </li>
+          <li class="list-inline-item last-item">
+            <a href="https://stackoverflow.com/users/3545541/tibi02" target="_blank" title="Stackoverflow" itemprop="sameAs">
+              <i class="fab fa-stack-overflow"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a class="btn btn-outline-secondary float-right" href="mailto:tibi.93@gmail.com" target="_blank">
+        <i class="fas fa-paper-plane mr-2"></i> Contact Me
+      </a>
+    </div>
+  </header>
+
+  <div class="container sections-wrapper">
+    <div class="row">
+      <div class="primary col-lg-8 col-12">
+        {{{body}}}
+      </div>
+      <div class="secondary col-lg-4 col-12">
+        <aside class="info aside section">
+          <div class="section-inner">
+            <h2 class="heading sr-only">Basic Information</h2>
+            <div class="content">
+              <ul class="list-unstyled">
+                <li>
+                  <i class="fas fa-map-marker-alt mr-2"></i><span class="sr-only">Location:</span>
+                  <span itemprop="address">Szeged, Hungary</span>
+                </li>
+                <li>
+                  <i class="fas fa-birthday-cake mr-2"></i><span class="sr-only">Birthday:</span>
+                  <span itemprop="birthDate">1993-02-01</span>
+                </li>
+                <li style="display: none">
+                  <i class="fas fa-birthday-cake mr-2"></i><span class="sr-only">Gender:</span>
+                  <span itemprop="gender">Male</span>
+                </li>
+                <li>
+                  <i class="fas fa-briefcase mr-2"></i><span class="sr-only">Organization:</span>
+                  <a href="https://jaystack.com" target="_blank" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">JayStack</a>
+                </li>
+                <li>
+                  <i class="fas fa-envelope mr-2"></i><span class="sr-only">Email:</span>
+                  <a href="mailto:tibi.93@gmail.com" itemprop="email">tibi.93@gmail.com</a>
+                </li>
+                <li>
+                  <i class="fas fa-link mr-2"></i><span class="sr-only">Website:</span>
+                  <a href="/" itemprop="url">https://oktibor.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+        <aside class="info aside section">
+          <div class="section-inner">
+            <h2 class="heading sr-only">Monitors</h2>
+            <div class="content">
+              <ul class="list-unstyled" id="monitors">
+                {{#if monitors}}
+                {{#each monitors}}
+                <li>
+                  {{#if isOnline}}
+                    <span class="badge badge-success">Online</span>
+                  {{else}}
+                    <span class="badge badge-danger">Offline</span>
+                  {{/if}}
+                  <a href="{{url}}">{{friendly_name}}</a>
+                </li>
+                {{/each}}
+                {{else}}
+                  There was an error on fetching Monitors!
+                {{/if}}
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <small class="copyright">Copyright &copy; 2018 <a href="/">oktibor.com</a></small>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>
