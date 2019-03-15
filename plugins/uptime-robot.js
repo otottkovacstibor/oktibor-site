@@ -2,14 +2,16 @@ const { stringify } = require('qs');
 const fetch = require('node-fetch');
 
 const UPTIMEROBOT_API = 'https://api.uptimerobot.com/v2';
-const API_KEY = process.env.UPTIMEROBOT_API_KEY;
+const { UPTIMEROBOT_API_KEY } = process.env;
 
 const api = async (type) => {
+  if (!UPTIMEROBOT_API_KEY) throw new Error('Missing Uptimerobot API key!');
+
   const options = {
     method: 'POST',
     timeout: 2000,
     body: stringify({
-      api_key: API_KEY, format: 'json', logs: 0, all_time_uptime_ratio: 0,
+      api_key: UPTIMEROBOT_API_KEY, format: 'json', logs: 0, all_time_uptime_ratio: 0,
     }),
     headers: {
       'content-type': 'application/x-www-form-urlencoded',
