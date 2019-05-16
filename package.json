@@ -27,7 +27,7 @@
     "express-cache-controller": "^1.1.0",
     "formatoid": "^1.2.3",
     "github-calendar-parser": "^1.1.10",
-    "hbs": "^4.0.3",
+    "hbs": "^4.0.4",
     "html-element": "^2.2.0",
     "http-errors": "^1.7.2",
     "jquery": "^3.4.1",
