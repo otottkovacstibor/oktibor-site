@@ -34,7 +34,7 @@
     "minixhr": "^4.0.0",
     "morgan": "^1.9.1",
     "mustache": "^2.3.2",
-    "node-fetch": "^2.3.0",
+    "node-fetch": "^2.5.0",
     "node-html-parser": "^1.1.15",
     "npm": "^6.9.0",
     "octicons": "^5.0.1",
