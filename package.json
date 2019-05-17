@@ -37,7 +37,7 @@
     "node-fetch": "^2.5.0",
     "node-html-parser": "^1.1.15",
     "npm": "^6.9.0",
-    "octicons": "^5.0.1",
+    "octicons": "^8.5.0",
     "popper.js": "^1.15.0",
     "qs": "^6.7.0",
     "request": "^2.88.0",
