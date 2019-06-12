@@ -18,7 +18,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.8.2",
+    "@fortawesome/fontawesome-free": "^5.9.0",
     "add-subtract-date": "^1.0.14",
     "bootstrap": "^4.3.1",
     "compression": "^1.7.4",
