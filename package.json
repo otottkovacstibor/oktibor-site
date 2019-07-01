@@ -29,7 +29,7 @@
     "github-calendar-parser": "^1.1.10",
     "hbs": "^4.0.4",
     "html-element": "^2.3.0",
-    "http-errors": "^1.7.2",
+    "http-errors": "^1.7.3",
     "jquery": "^3.4.1",
     "minixhr": "^4.0.0",
     "morgan": "^1.9.1",
