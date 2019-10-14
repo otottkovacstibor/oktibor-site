@@ -18,7 +18,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.10.2",
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "add-subtract-date": "^1.0.14",
     "bootstrap": "^4.3.1",
     "compression": "^1.7.4",
@@ -27,7 +27,7 @@
     "express-cache-controller": "^1.1.0",
     "formatoid": "^1.2.3",
     "github-calendar-parser": "^1.1.10",
-    "hbs": "^4.0.4",
+    "hbs": "^4.0.6",
     "html-element": "^2.3.0",
     "http-errors": "^1.7.3",
     "jquery": "^3.4.1",
@@ -36,18 +36,18 @@
     "mustache": "^3.1.0",
     "node-fetch": "^2.6.0",
     "node-html-parser": "^1.1.16",
-    "npm": "^6.11.3",
+    "npm": "^6.12.0",
     "octicons": "^8.5.0",
     "popper.js": "^1.15.0",
-    "qs": "^6.8.0",
+    "qs": "^6.9.0",
     "request": "^2.88.0",
     "serve-favicon": "^2.5.0",
     "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
-    "eslint": "^6.4.0",
+    "eslint": "^6.5.1",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-plugin-import": "^2.18.2",
-    "nodemon": "^1.19.2"
+    "nodemon": "^1.19.3"
   }
 }
