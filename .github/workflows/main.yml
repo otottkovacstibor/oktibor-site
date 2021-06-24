@@ -24,5 +24,14 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: |
-            docker.pkg.github.com/tibi02/oktibor-site/oktibor-site:${{ github.sha }}
+          tags: docker.pkg.github.com/tibi02/oktibor-site/oktibor-site:${{ github.sha }}
+  deploy:
+    name: Deploy to Heroku
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "oktibor-site"
+          heroku_email: "tibi.93@gmail.com"
