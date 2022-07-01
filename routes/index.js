@@ -4,7 +4,7 @@ const UptimeRobot = require('../plugins/uptime-robot');
 
 const router = Router();
 
-const GITHUB_USERNAME = 'tibi02';
+const GITHUB_USERNAME = 'otottkovacstibor';
 
 router.use(async (req, res, next) => {
   try {
