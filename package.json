@@ -39,7 +39,7 @@
     "npm": "^7.20.3",
     "octicons": "^8.5.0",
     "popper.js": "^1.16.1",
-    "qs": "^6.10.1",
+    "qs": "^6.10.5",
     "request": "^2.88.2",
     "serve-favicon": "^2.5.0",
     "xmlhttprequest": "^1.8.0"
