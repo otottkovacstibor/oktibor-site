@@ -1,111 +1,119 @@
 "use client";
 
 import { motion } from "framer-motion";
-import social from "@/data/social.json";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-[100dvh] items-center overflow-hidden">
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-40 right-0 h-[500px] w-[500px] rounded-full bg-accent/5 blur-[120px]" />
-        <div className="absolute -bottom-20 -left-20 h-[400px] w-[400px] rounded-full bg-cyan-500/5 blur-[100px]" />
-      </div>
+    <section
+      id="top"
+      className="flex min-h-[100dvh] flex-col justify-center px-6 py-24 sm:px-12"
+    >
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="max-w-3xl"
+      >
+        <div className="rounded-lg border border-border bg-card">
+          <div className="flex items-center gap-2 border-b border-border px-4 py-2.5">
+            <span className="h-3 w-3 rounded-full bg-red" />
+            <span className="h-3 w-3 rounded-full bg-yellow" />
+            <span className="h-3 w-3 rounded-full bg-green" />
+            <span className="ml-3 text-xs text-muted">tibor@oktibor ~ </span>
+          </div>
+          <div className="p-6 font-mono text-sm leading-relaxed">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+            >
+              <span className="text-green">$</span>{" "}
+              <span className="text-foreground">whoami</span>
+            </motion.div>
 
-      <div className="relative mx-auto max-w-5xl px-6 py-32">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5 }}
+              className="mt-4"
+            >
+              <p className="text-2xl font-bold text-foreground sm:text-3xl lg:text-4xl">
+                Tibor Ótott-Kovács
+              </p>
+              <p className="mt-1 text-accent">Senior Software Engineer</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.8 }}
+              className="mt-6"
+            >
+              <span className="text-green">$</span>{" "}
+              <span className="text-foreground">cat README.md</span>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.1 }}
+              className="mt-3 text-muted"
+            >
+              <p>
+                I build and operate production systems — from application code
+                to cloud infrastructure.
+              </p>
+              <p className="mt-2">
+                10+ years of end-to-end ownership across backend engineering,
+                cloud infrastructure, DevOps, and security.
+              </p>
+              <p className="mt-2">
+                <span className="text-accent">TypeScript</span>
+                {" · "}
+                <span className="text-accent">Node.js</span>
+                {" · "}
+                <span className="text-accent">PostgreSQL</span>
+                {" · "}
+                <span className="text-accent">AWS</span>
+                {" · "}
+                <span className="text-muted">
+                  serverless, workflow engines, performance-critical systems
+                </span>
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.5 }}
+              className="mt-6 flex items-center"
+            >
+              <span className="text-green">$</span>{" "}
+              <span className="ml-1 inline-block h-4 w-2 bg-green animate-blink" />
+            </motion.div>
+          </div>
+        </div>
+
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-        >
-          <p className="mb-6 font-mono text-sm text-accent">
-            Hi, I&apos;m Tibor
-          </p>
-        </motion.div>
-
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
-          className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl"
-        >
-          I build and operate{" "}
-          <span className="text-accent">production systems</span> — from
-          application code to cloud infrastructure.
-        </motion.h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
-          className="mt-8 max-w-2xl text-lg leading-relaxed text-muted"
-        >
-          Senior Software Engineer with 10+ years of end-to-end ownership
-          across backend engineering, cloud infrastructure, DevOps, and
-          security. TypeScript, Node.js, PostgreSQL, AWS — serverless
-          architectures, workflow engines, and performance-critical systems.
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
-          className="mt-10 flex flex-wrap gap-4"
+          transition={{ delay: 1.8 }}
+          className="mt-8 flex flex-wrap gap-3"
         >
           <a
             href="#contact"
-            className="inline-flex h-12 items-center rounded-lg bg-accent px-6 text-sm font-medium text-background transition-all hover:bg-accent/90 hover:shadow-lg hover:shadow-accent/20"
+            className="inline-flex h-10 items-center rounded-md border border-accent bg-accent/10 px-5 text-xs font-medium text-accent transition-all hover:bg-accent/20"
           >
             Say hello
           </a>
           <a
             href="#experience"
-            className="inline-flex h-12 items-center rounded-lg border border-border px-6 text-sm font-medium text-foreground transition-colors hover:border-accent/40 hover:text-accent"
+            className="inline-flex h-10 items-center rounded-md border border-border px-5 text-xs font-medium text-muted transition-colors hover:border-muted hover:text-foreground"
           >
             See my work
           </a>
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.6 }}
-          className="mt-16 flex items-center gap-6"
-        >
-          <div className="h-px flex-1 max-w-16 bg-border" />
-          <div className="flex gap-5">
-            <a
-              href={social.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted transition-colors hover:text-foreground"
-              aria-label="GitHub"
-            >
-              <svg
-                className="h-5 w-5"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-              </svg>
-            </a>
-            <a
-              href={social.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted transition-colors hover:text-foreground"
-              aria-label="LinkedIn"
-            >
-              <svg
-                className="h-5 w-5"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-              </svg>
-            </a>
-          </div>
-        </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 }

@@ -7,13 +7,13 @@ import { Contact } from "@/components/contact";
 
 export default function Home() {
   return (
-    <>
+    <div className="divide-y divide-border">
       <Hero />
       <About />
       <Experience />
       <Stack />
       <Projects />
       <Contact />
-    </>
+    </div>
   );
 }

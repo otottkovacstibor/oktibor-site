@@ -2,13 +2,19 @@
 
 :root {
   --background: #0a0a0a;
-  --foreground: #e5e5e5;
-  --muted: #a3a3a3;
-  --accent: #22d3ee;
-  --accent-dim: rgba(34, 211, 238, 0.1);
-  --border: #262626;
-  --card: #141414;
-  --card-hover: #1a1a1a;
+  --foreground: #c9d1d9;
+  --muted: #6e7681;
+  --accent: #58a6ff;
+  --accent-dim: rgba(88, 166, 255, 0.1);
+  --green: #3fb950;
+  --green-dim: rgba(63, 185, 80, 0.1);
+  --yellow: #d29922;
+  --red: #f85149;
+  --border: #21262d;
+  --card: #0d1117;
+  --card-hover: #161b22;
+  --sidebar: #010409;
+  --prompt: #3fb950;
 }
 
 @theme inline {
@@ -17,9 +23,15 @@
   --color-muted: var(--muted);
   --color-accent: var(--accent);
   --color-accent-dim: var(--accent-dim);
+  --color-green: var(--green);
+  --color-green-dim: var(--green-dim);
+  --color-yellow: var(--yellow);
+  --color-red: var(--red);
   --color-border: var(--border);
   --color-card: var(--card);
   --color-card-hover: var(--card-hover);
+  --color-sidebar: var(--sidebar);
+  --color-prompt: var(--prompt);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -27,11 +39,11 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), system-ui, sans-serif;
+  font-family: var(--font-mono), ui-monospace, monospace;
 }
 
 ::selection {
-  background: rgba(34, 211, 238, 0.25);
+  background: rgba(88, 166, 255, 0.3);
   color: #fff;
 }
 
@@ -39,21 +51,11 @@ html {
   scroll-behavior: smooth;
 }
 
-@keyframes gradient-shift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
-.animate-gradient {
-  background-size: 200% 200%;
-  animation: gradient-shift 8s ease infinite;
-}
-
-@keyframes pulse-glow {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.8; }
-}
-
-.animate-pulse-glow {
-  animation: pulse-glow 3s ease-in-out infinite;
+.animate-blink {
+  animation: blink 1.2s step-end infinite;
 }

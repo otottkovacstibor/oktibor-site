@@ -6,7 +6,7 @@ import { type ReactNode } from "react";
 interface SectionProps {
   id: string;
   title?: string;
-  subtitle?: string;
+  filename?: string;
   children: ReactNode;
   className?: string;
 }
@@ -14,27 +14,30 @@ interface SectionProps {
 export function Section({
   id,
   title,
-  subtitle,
+  filename,
   children,
   className = "",
 }: SectionProps) {
   return (
-    <section id={id} className={`py-24 sm:py-32 ${className}`}>
-      <div className="mx-auto max-w-5xl px-6">
-        {title && (
+    <section id={id} className={`px-6 py-16 sm:px-12 ${className}`}>
+      <div className="max-w-3xl">
+        {(title || filename) && (
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5 }}
-            className="mb-16"
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.4 }}
+            className="mb-8"
           >
-            <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-              {title}
-              <span className="text-accent">.</span>
-            </h2>
-            {subtitle && (
-              <p className="mt-3 max-w-2xl text-base text-muted">{subtitle}</p>
+            {filename && (
+              <p className="mb-2 text-xs text-muted">
+                <span className="text-yellow">~</span>/{filename}
+              </p>
+            )}
+            {title && (
+              <h2 className="text-xl font-bold text-foreground sm:text-2xl">
+                {title}
+              </h2>
             )}
           </motion.div>
         )}
