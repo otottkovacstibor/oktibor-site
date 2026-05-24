@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Languages & Frameworks",
+    "items": [
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "Next.js",
+      "React",
+      "tRPC",
+      "SQL",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "name": "Cloud & Infrastructure",
+    "items": [
+      "AWS",
+      "Lambda",
+      "EKS",
+      "S3",
+      "KMS",
+      "SWF",
+      "DynamoDB",
+      "SNS/SQS",
+      "Step Functions",
+      "CloudFront",
+      "WAF",
+      "Cognito",
+      "AppSync",
+      "Terraform",
+      "Fly.io",
+      "Supabase",
+      "Vercel",
+      "Kubernetes"
+    ]
+  },
+  {
+    "name": "DevOps & Tooling",
+    "items": [
+      "Docker",
+      "GitHub Actions",
+      "Blacksmith CI",
+      "Serverless Framework",
+      "Mux",
+      "Monitoring & alerting",
+      "Video transcoding pipelines",
+      "Background processing"
+    ]
+  },
+  {
+    "name": "Security & Compliance",
+    "items": [
+      "ISO-27001",
+      "SOC-2",
+      "Security hardening",
+      "CSP headers",
+      "Vulnerability mgmt",
+      "Cloud security",
+      "Audit controls"
+    ]
+  }
+]

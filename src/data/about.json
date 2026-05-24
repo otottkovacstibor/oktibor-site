@@ -1,0 +1,29 @@
+{
+  "subtitle": "10+ years building production backend systems at scale. Proven track record of taking platforms from greenfield to production, handling unpredictable workloads, and operating long-running stateful workflows in fully remote, international teams.",
+  "pillars": [
+    {
+      "title": "Software Engineering",
+      "description": "Backend architecture, API design, type-safe systems. Building maintainable platforms that scale."
+    },
+    {
+      "title": "Cloud & DevOps",
+      "description": "AWS, Terraform, Docker, CI/CD pipelines. Infrastructure as code, observability, and production reliability."
+    },
+    {
+      "title": "Security & Compliance",
+      "description": "ISO-27001, SOC-2 readiness, vulnerability management. Security hardening baked into the architecture."
+    },
+    {
+      "title": "Developer Experience",
+      "description": "Tooling, automation, testing culture. Making teams faster with better abstractions and workflows."
+    }
+  ],
+  "philosophy": [
+    "Pragmatic architecture",
+    "Type safety everywhere",
+    "Strong testing culture",
+    "Secure defaults",
+    "Production reliability first",
+    "Simple solutions to hard problems"
+  ]
+}

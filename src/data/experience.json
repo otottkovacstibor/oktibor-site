@@ -1,0 +1,68 @@
+[
+  {
+    "role": "Software Engineer",
+    "company": "TexterID",
+    "period": "Aug 2025 — Present",
+    "description": "SaaS platform for RCS messaging, aggregator integrations, and launch automation. Owning backend architecture, cloud infrastructure, security & compliance, and developer tooling.",
+    "highlights": [
+      "Backend architecture & API design",
+      "Cloud infrastructure (AWS, Fly.io)",
+      "Security & compliance (ISO-27001, SOC-2)",
+      "CI/CD pipelines & developer tooling",
+      "Provider integrations (Vibes, Infobip, Sinch, Google MaaP)",
+      "Performance optimization & production reliability"
+    ]
+  },
+  {
+    "role": "Lead Software Engineer",
+    "company": "eSzínház",
+    "period": "Jun 2019 — Present",
+    "description": "Digital theatre streaming platform delivering live and on-demand performances online. Sole engineer owning the entire technical stack — from serverless backend architecture and cloud infrastructure to video delivery, operations, and production reliability.",
+    "highlights": [
+      "Cloud-native serverless architecture on AWS",
+      "Lambda, DynamoDB, SNS/SQS, Step Functions",
+      "CloudFront CDN & Mux video streaming",
+      "Event-driven design patterns",
+      "Cognito auth with SSO",
+      "AppSync GraphQL realtime",
+      "Terraform IaC & GitHub Actions CI/CD",
+      "End-to-end product delivery as sole engineer"
+    ]
+  },
+  {
+    "role": "Software Engineer",
+    "company": "Zabit",
+    "period": "Sep 2024 — Aug 2025",
+    "description": "Backend engineering in a fully remote, international team. Working on production systems with PostgreSQL, AWS, and event-driven architectures.",
+    "highlights": [
+      "PostgreSQL",
+      "AWS",
+      "EKS / Kubernetes",
+      "Backend systems",
+      "Remote / international team"
+    ]
+  },
+  {
+    "role": "Senior Software Engineer",
+    "company": "One Beyond",
+    "period": "Jun 2016 — Sep 2024",
+    "description": "8+ years building and operating production backend systems. Formerly JayStack until acquisition in August 2022. Custom workflow engines, long-running processes, video transcoding pipelines, analytics, and background processing at scale.",
+    "highlights": [
+      "TypeScript & Node.js",
+      "Custom workflow engines",
+      "Video transcoding pipelines",
+      "AWS (Lambda, EKS, S3, KMS, CloudFront, SWF)",
+      "Kubernetes & Docker",
+      "Monitoring & alerting",
+      "Infrastructure as Code",
+      "Long-running stateful workflows"
+    ]
+  },
+  {
+    "role": "Software Developer",
+    "company": "Simple Clever Solutions",
+    "period": "Sep 2015 — Jun 2016",
+    "description": "Early-career development work with JavaScript and Unity.",
+    "highlights": ["JavaScript", "Unity"]
+  }
+]

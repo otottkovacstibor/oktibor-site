@@ -1,0 +1,26 @@
+[
+  {
+    "name": "TexterID Platform",
+    "description": "RCS messaging SaaS — aggregator integrations, launch automation, provider connectivity with Google MaaP ecosystem.",
+    "tags": ["TypeScript", "Next.js", "AWS", "PostgreSQL", "tRPC"],
+    "type": "Production SaaS"
+  },
+  {
+    "name": "eSzínház",
+    "description": "Digital theatre streaming platform. Cloud-native serverless architecture delivering live and on-demand performances with Mux video, DynamoDB, and event-driven AWS services.",
+    "tags": ["AWS Lambda", "DynamoDB", "Mux", "Terraform", "Serverless", "Next.js"],
+    "type": "Streaming Platform"
+  },
+  {
+    "name": "Cloud Infrastructure",
+    "description": "Production-grade infrastructure setups using Terraform, AWS, and Fly.io. CI/CD pipelines, monitoring, and security hardening.",
+    "tags": ["Terraform", "AWS", "Docker", "GitHub Actions"],
+    "type": "Infrastructure"
+  },
+  {
+    "name": "Security & Compliance Systems",
+    "description": "ISO-27001 and SOC-2 readiness programs. Security controls, audit evidence automation, vulnerability management workflows.",
+    "tags": ["ISO-27001", "SOC-2", "Security", "Compliance"],
+    "type": "Security"
+  }
+]
