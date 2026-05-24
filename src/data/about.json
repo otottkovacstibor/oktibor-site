@@ -1,23 +1,34 @@
 {
-  "subtitle": "10+ years building production backend systems at scale. Proven track record of taking platforms from greenfield to production, handling unpredictable workloads, and operating long-running stateful workflows in fully remote, international teams.",
+  "subtitle": "10+ years of end-to-end ownership across backend engineering, cloud infrastructure, DevOps, and security. Taking platforms from greenfield to production, handling unpredictable workloads, and operating long-running stateful workflows in fully remote, international teams.",
   "pillars": [
     {
-      "title": "Software Engineering",
-      "description": "Backend architecture, API design, type-safe systems. Building maintainable platforms that scale."
+      "title": "Backend & Platform Engineering",
+      "description": "Architecture, API design, type-safe systems, workflow engines. Building maintainable platforms that handle real production traffic."
     },
     {
-      "title": "Cloud & DevOps",
-      "description": "AWS, Terraform, Docker, CI/CD pipelines. Infrastructure as code, observability, and production reliability."
+      "title": "Cloud & Infrastructure",
+      "description": "AWS, Terraform, serverless, Kubernetes. Designing and operating cloud-native systems with strong reliability and cost awareness."
     },
     {
       "title": "Security & Compliance",
-      "description": "ISO-27001, SOC-2 readiness, vulnerability management. Security hardening baked into the architecture."
+      "description": "ISO-27001, SOC-2, vulnerability management, security hardening. Compliance engineering baked into the architecture, not bolted on."
     },
     {
-      "title": "Developer Experience",
-      "description": "Tooling, automation, testing culture. Making teams faster with better abstractions and workflows."
+      "title": "DevOps & Developer Experience",
+      "description": "CI/CD, observability, automation, testing culture. Making teams faster and deploys safer with better tooling and workflows."
     }
   ],
+  "expertise": [
+    "Cloud Architecture",
+    "Backend Systems",
+    "Serverless & AWS",
+    "Security & Compliance",
+    "DevOps / CI/CD",
+    "Performance & Reliability",
+    "Developer Tooling",
+    "SaaS Platforms"
+  ],
+  "now": "Currently working on secure SaaS infrastructure, cloud architecture, RCS messaging platforms, and compliance-driven engineering at TexterID — while continuing to operate eSzínház as sole engineer.",
   "philosophy": [
     "Pragmatic architecture",
     "Type safety everywhere",

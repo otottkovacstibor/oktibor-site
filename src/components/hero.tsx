@@ -28,9 +28,9 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
           className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl"
         >
-          I build backend systems,{" "}
-          <span className="text-accent">cloud infrastructure</span>, and
-          developer platforms.
+          I build and operate{" "}
+          <span className="text-accent">production systems</span> — from
+          application code to cloud infrastructure.
         </motion.h1>
 
         <motion.p
@@ -39,10 +39,10 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
           className="mt-8 max-w-2xl text-lg leading-relaxed text-muted"
         >
-          Senior Software Engineer with 10+ years of experience building and
-          operating production backend systems at scale. TypeScript, Node.js,
-          PostgreSQL, AWS — serverless architectures, workflow engines, and
-          performance-critical systems.
+          Senior Software Engineer with 10+ years of end-to-end ownership
+          across backend engineering, cloud infrastructure, DevOps, and
+          security. TypeScript, Node.js, PostgreSQL, AWS — serverless
+          architectures, workflow engines, and performance-critical systems.
         </motion.p>
 
         <motion.div
