@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Sidebar } from "@/components/sidebar";
 
 const geistSans = Geist({
@@ -55,6 +56,7 @@ export default function RootLayout({
       <body className="min-h-full flex">
         <Sidebar />
         <main className="flex-1 min-h-screen lg:ml-64">{children}</main>
+        <SpeedInsights />
       </body>
     </html>
   );
